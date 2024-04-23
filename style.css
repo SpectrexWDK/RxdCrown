@@ -296,6 +296,7 @@ header img{
 }
 
 #memberArtists{
+    margin-top: 5px;
     color: #ff0000;
     font-size: 1.8em;
     position: relative;
@@ -316,7 +317,7 @@ header img{
 }
 
 .memberCard img {
-    width: 140px;
+    width: 130px;
     border-radius: 10px;
 }
 
