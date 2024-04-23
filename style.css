@@ -22,10 +22,13 @@ body{
 
 @media (max-width: 1359px){
     .header-texts ul{
-        display: none;
+        margin-right: 12px;
     }
     .nav-list a {
-        display: none;
+        color: #fff;
+        text-decoration: none;
+        padding-left: 20px; 
+        font-size: 20px;
     }
 }
 
@@ -86,6 +89,8 @@ header img{
     height: 100vh;
     background-size: 100%;
 }
+
+
 
 #main-block {
     display: flex;
