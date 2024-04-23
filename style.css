@@ -4,42 +4,68 @@ body{
     margin: 0;
     padding: 0;
     font-family: "Poppins", sans-serif;
+    background-color: #000;
+    color: #fff;
 }
 
-section{
-    height: 100vh;
+::selection {
+    background: #ff0000; /* Цвет фона */
+    color: #fff; /* Цвет текста */
+   }
+
+#telegram-link{
+    color: #0f7bd4;
 }
+
 
 /* =========================[HEADER]========================== */
 
 header{
-    background-color: rgb(0, 0, 0, 0.8);
+    background-color: rgb(0, 0, 0, 1);
     margin-top: 0;
-    /* box-shadow: 0 8px 8px rgba(0, 0, 0, 0.6); */
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.6);
     display: flex;
     position: fixed;
     width: 100%;
+    z-index: 100;
 }
 
-.header-texts{
+.header-texts {
     color: #fff;
-    width: 100%;
-    display: inline-flex;
-}
-
-.nav-list a{
-    color: #fff;
-    text-align: right;
+    display: flex; 
+    align-items: center; 
+    justify-content: space-between; 
+    width: calc(100% - 90px); 
 }
 
 .header-texts h1{
+    margin: 0;
+}
+
+.header-texts ul{
+    margin-right: 20px;
+}
+
+.nav-list {
+    list-style-type: none; 
+    margin: 0;
+    padding: 0; 
+    display: flex; 
     margin-left: 20px;
 }
 
+.nav-list a {
+    color: #fff;
+    text-decoration: none;
+    padding-left: 25px; 
+    font-size: 25px;
+}
+
 header img{
-    width: 90px;
-    height: 90px;
-    margin-left: 10px;
+    width: 80px;
+    height: 80px;
+    margin-left: 12px;
+    margin-right: 10px;
 }
 
 /* =========================[MAIN SECTION]========================== */
@@ -57,6 +83,7 @@ header img{
     align-items: center;
     width: 100%;
     height: 100%;
+    flex-direction: column;
 } 
 
 #main-block h1{
@@ -66,4 +93,277 @@ header img{
 #main-block h2{
     color: #d6d6d6;
     font-size: 2em;
+    margin-top: -40px;
 }
+
+.main-button{
+    border: 0;
+    padding: 18px 56px;
+    border-radius: 6px;
+    background-color: #ff0000;
+    color: #fff;
+    font-size: 24px;
+    cursor: pointer;
+}
+.main-button:hover{
+    text-decoration: underline;
+}
+
+/* =========================[INFO SECTION]========================== */
+
+.info-section{
+    height: 100vh;
+    background-size: 100%;
+}
+
+.info-block{
+    display: inline-flex;
+}
+
+.info-block img{
+    width: 35%;
+    margin-left: 18%;
+    transition: 0.8s;
+}
+
+.info-block img:hover{
+    transform: scale(1.1);
+}
+
+.info-section h1{
+    padding-top: 100px;
+    margin: 30px;
+    color: #ff0000;
+    margin-bottom: 0;
+    font-size: 2.4em;
+}
+.info-section h2{
+    padding: 0;
+    font-size: 1.4em;
+    width: 40%;
+    margin-left: 30px;
+}
+
+
+
+
+/* =========================[VIDEO SECTION]========================== */
+
+.video-section{
+    background: url("images/backgrounds/VideoBack.jpg");
+    height: 100vh;
+    background-size: 100%;
+    text-align: center;
+}
+
+.video-section h2{
+    color: #fff;
+    margin: 20px;
+    padding-top: 100px;
+    font-size: 50px;
+}
+
+.video-container {
+    position: relative;
+    margin-left: -80%;
+    width: 1280px; 
+    height: 720px;
+    margin: 0 auto;
+}
+
+.video-container iframe {
+    width: 100%;
+    height: 100%;
+}
+
+
+/* =========================[PROJECTS SECTION]========================== */
+
+.projects-section{
+    min-height: 100vh;
+    background-size: 100%;
+    text-align: center; 
+}
+
+.projects-section h2{
+    padding-top: 100px;
+    margin: 30px;
+    color: #ff0000;
+    font-size: 2.4em;
+}
+
+.projects-container{
+    width: 90%;
+    height: 90%;
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.projects-zone{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.project{
+    width: 260px;
+    height: 440px;
+    /* border: 1px solid red; */
+    transition: 0.8s;
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+.project h4{
+    position: absolute;
+    color: #fff;
+    margin-top: -32px;
+}
+
+.project img{
+    width: 100%;
+    border-radius: 10px;
+}
+
+.project:hover {
+    transform: scale(1.05); /* Увеличиваем масштаб */
+}
+
+/* =========================[ACTIVITIES SECTION]========================== */
+
+.activities-section{
+    background: url("images/backgrounds/ActivitiesBack.jpg");
+    min-height: 100vh;
+    background-size: 100%;
+    text-align: center;
+}
+
+.activities-section h2{
+    padding-top: 100px;
+    margin-top: 30px;
+    color: #ff0000;
+    font-size: 2.4em;
+}
+
+.activities-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    height: 100%;
+}
+
+.activities-list{
+    width: 80%;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    height: 70vh;
+}
+
+.activity{
+    margin: 0 55px 55px 0;
+}
+
+.activity img{
+    width: 400px;
+    height: 400px;
+}
+/* =========================[MEMBERS SECTION]========================== */
+
+.membersSection{
+    background-size: 100%;
+    text-align: center; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+.membersSection h2{
+    padding-top: 100px;
+    margin-top: 30px;
+    color: #ff0000;
+    font-size: 2.4em;
+}
+
+#memberProgramers{
+    color: #ff0000;
+    font-size: 1.8em;
+    margin-top: -30px;
+    position: relative;
+}
+
+#memberArtists{
+    color: #ff0000;
+    font-size: 1.8em;
+    position: relative;
+}
+
+.memberCardZone{
+    width: 95%;
+    background-color: #101010;
+    border-radius: 15px;
+    margin-bottom: 20px;
+}
+
+.memberCard{
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    padding: 15px;
+}
+
+.memberCard img {
+    width: 140px;
+    border-radius: 10px;
+}
+
+.memberCardText{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-left: 20px;
+    text-align: left;
+    h1{
+        color: #ff0000;
+        margin-top: -10px;
+    }
+    h2{
+        color: #ff0000;
+        margin: 0;
+        font-size: 20px;
+        margin-top: -10px;
+        padding: 0;
+    }
+    h3{
+        color:rgb(30, 138, 245);
+        margin-bottom: -6px;
+    }
+}
+
+.youtubeButton{
+    background-color: #ff0000;
+    border: 0;
+    border-radius: 10px;
+    padding: 18px 36px;
+    color: #fff;
+    font-size: 15px;
+    margin: 80px 0 0 0;
+    cursor: pointer;
+}
+
+.youtubeButton:hover{
+    background-color: #ff1212;
+    text-decoration: underline;
+}
+
+
+
+
+
+
+
+
