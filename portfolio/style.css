@@ -139,9 +139,86 @@ a{
     font-size: 1.3em;
     border-radius: 10px;
     cursor: pointer;
+    margin-bottom: 30px;
 }
 
 .ytbtn:hover{
     background-color: #c40000;
     text-decoration: underline;
 }
+
+.category{
+    text-align: center;
+    width: 100%;
+    color: #ff0000;
+    font-size: 1.6em;
+}
+
+/* =========================[POEMS]========================== */
+
+.poems-section{
+    display: flex;
+    justify-content: center;
+}
+
+.poems-zone{
+    display: flex;
+    justify-content: center;
+    background-color: #121212;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+
+@media(max-width: 1359px){
+    .poem{
+        margin: 0 5px 0 5px;
+    }
+    .poem h2 h3{
+        font-size: 12px;
+    }
+}
+
+.poem{
+    h2, h3{
+        text-align: center;
+    }
+    h3{
+        color: rgb(209, 209, 209);
+    }
+    h4{
+        text-align: right;
+    }
+}
+
+@media(min-width: 1360px){
+    .poem{
+        margin: 0 55px 0 55px;
+    }
+}
+
+
+.allPoems{
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
