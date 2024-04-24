@@ -11,7 +11,7 @@ body{
 ::selection {
     background: #ff0000; /* Цвет фона */
     color: #fff; /* Цвет текста */
-   }
+}
 
 #telegram-link{
     color: #0f7bd4;
@@ -261,43 +261,6 @@ header img{
 
 /* =========================[ACTIVITIES SECTION]========================== */
 
-.activities-section{
-    background: url("images/backgrounds/ActivitiesBack.jpg");
-    min-height: 100vh;
-    background-size: 100%;
-    text-align: center;
-}
-
-.activities-section h2{
-    padding-top: 100px;
-    margin-top: 30px;
-    color: #ff0000;
-    font-size: 2.4em;
-}
-
-.activities-container{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    height: 100%;
-}
-
-.activities-list{
-    width: 80%;
-    justify-content: center;
-    display: flex;
-    align-items: center;
-    height: 70vh;
-}
-
-.activity{
-    margin: 0 55px 55px 0;
-}
-
-.activity img{
-    width: 400px;
-    height: 400px;
-}
 /* =========================[MEMBERS SECTION]========================== */
 
 .membersSection{
@@ -362,7 +325,7 @@ header img{
         margin-top: -10px;
     }
     h2{
-        color: #ff0000;
+        color: #8b0000;
         margin: 0;
         font-size: 20px;
         margin-top: -10px;
@@ -385,11 +348,26 @@ header img{
     cursor: pointer;
 }
 
+.portfolio-button{
+    background-color: #ff0000;
+    border: 0;
+    border-radius: 10px;
+    padding: 18px 36px;
+    color: #fff;
+    font-size: 15px;
+    margin: 80px 10px 0 0;
+    cursor: pointer;
+}
+
 .youtubeButton:hover{
-    background-color: #ff1212;
+    background-color: #c40000;
     text-decoration: underline;
 }
 
+.portfolio-button:hover{
+    background-color: #c40000;
+    text-decoration: underline;
+}
 
 
 

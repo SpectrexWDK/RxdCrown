@@ -1,0 +1,147 @@
+/* =========================[MAIN]========================== */
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    background-color: #000;
+    color: #fff;
+    padding-bottom: 50px;
+}
+
+::selection {
+    background: #ff0000; /* Цвет фона */
+    color: #fff; /* Цвет текста */
+}
+
+/* =========================[HEADER]========================== */
+
+header{
+    background-color: rgb(0, 0, 0, 1);
+    margin-top: 0;
+    box-shadow: 0 3px 8px rgba(255, 0, 0, 0.6);
+    display: flex;
+    width: 100%;
+    z-index: 100;
+}
+
+.header-texts {
+    color: #fff;
+    display: flex; 
+    align-items: center; 
+    justify-content: space-between; 
+    width: calc(100% - 90px); 
+}
+
+.header-texts h1{
+    margin: 0;
+}
+
+.nav-list {
+    list-style-type: none; 
+    margin: 0;
+    padding: 0; 
+    display: flex; 
+    margin-left: 20px;
+}
+
+header img{
+    width: 80px;
+    height: 80px;
+    margin-left: 12px;
+    margin-right: 10px;
+}
+
+/* =========================[SECTION]========================== */
+
+.zone{
+    margin-top: 6vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.main-block{
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+
+.card{
+    text-align: center;
+}
+
+.card h1{
+    color: #ff0000;
+    font-size: 2.6em;
+}
+
+.info-section h2{
+    color: aqua;
+    font-size: 2em;
+}
+
+.card img{
+    width: 300px;
+    border-radius: 30px;
+}
+
+.info-section{
+    margin-left: 30px;
+}
+
+.languages{
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+}
+
+.languages h3{
+    margin-left: 15px;
+    font-size: 1.4em;
+}
+
+.language img{
+    width: 40px;
+}
+
+.language{
+    display: inline-flex;
+    align-items: center;
+
+}
+a{
+    text-decoration: none;
+    color: #fff;
+}
+.activities-container{
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.activities{
+    display: inline-flex;
+    h3{
+        font-size: 1.4em;
+        color: #ffffff;;
+        margin: 10px 0 10px 0;
+    }
+}
+
+.ytbtn{
+    background-color: #ff0000;
+    border: 0;
+    color: #fff;
+    padding: 16px 22px 16px 22px;
+    width: 10%;
+    margin-top: 15px;
+    font-size: 1.3em;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.ytbtn:hover{
+    background-color: #c40000;
+    text-decoration: underline;
+}
