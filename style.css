@@ -47,7 +47,7 @@ body{
 header{
     background-color: rgb(0, 0, 0, 1);
     margin-top: 0;
-    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.6);
+    box-shadow: 0 3px 8px rgba(255, 0, 0, 0.6);
     display: flex;
     position: fixed;
     width: 100%;
@@ -211,14 +211,28 @@ header img{
 .projects-section{
     min-height: 100vh;
     background-size: 100%;
-    text-align: center; 
+    padding-bottom: 20px;
 }
 
-.projects-section h2{
+.title{
+    text-align: center;
+}
+
+.projectCategory{
+    margin: 0 0 0 20px;
+    color: #ff0000;
+    font-size: 1.6em;
+}
+
+.title h2{
     padding-top: 100px;
-    margin: 30px;
+    margin: 20px;
     color: #ff0000;
     font-size: 2.4em;
+}
+
+.projects-category{
+    text-align: left;
 }
 
 .projects-container{
@@ -226,7 +240,7 @@ header img{
     height: 90%;
     padding: 50px;
     display: flex;
-    justify-content: center;
+    justify-content: left;
 }
 
 .projects-zone{
@@ -240,8 +254,14 @@ header img{
     height: 440px;
     /* border: 1px solid red; */
     transition: 0.8s;
+    margin-top: -30px;
     margin-left: 25px;
     margin-right: 25px;
+    text-align: center;
+}
+
+.project h3{
+    padding-bottom: 10px;
 }
 
 .project h4{
@@ -313,14 +333,14 @@ header img{
 
 .membersSection h2{
     padding-top: 100px;
-    margin-top: 30px;
+    margin-top: 0px;
     color: #ff0000;
     font-size: 2.4em;
 }
 
 #memberProgramers{
     color: #ff0000;
-    font-size: 1.8em;
+    font-size: 1.6em;
     margin-top: -30px;
     position: relative;
 }
@@ -328,7 +348,7 @@ header img{
 #memberArtists{
     margin-top: 5px;
     color: #ff0000;
-    font-size: 1.8em;
+    font-size: 1.6em;
     position: relative;
 }
 
@@ -347,7 +367,7 @@ header img{
 }
 
 .memberCard img {
-    width: 130px;
+    width: 100px;
     border-radius: 10px;
 }
 
@@ -361,16 +381,17 @@ header img{
     h1{
         color: #ff0000;
         margin-top: -10px;
+        margin-bottom: 15px;
     }
     h2{
         color: #8b0000;
-        margin: 0;
         font-size: 20px;
         margin-top: -10px;
         padding: 0;
     }
     h3{
         color:rgb(30, 138, 245);
+        margin-top: -10px;
         margin-bottom: -6px;
     }
 }
@@ -382,7 +403,7 @@ header img{
     padding: 18px 36px;
     color: #fff;
     font-size: 15px;
-    margin: 80px 0 0 0;
+    margin: 40px 0 0 0;
     cursor: pointer;
 }
 
@@ -393,7 +414,7 @@ header img{
     padding: 18px 36px;
     color: #fff;
     font-size: 15px;
-    margin: 80px 10px 0 0;
+    margin: 40px 10px 0 0;
     cursor: pointer;
 }
 
@@ -406,10 +427,3 @@ header img{
     background-color: #c40000;
     text-decoration: underline;
 }
-
-
-
-
-
-
-
