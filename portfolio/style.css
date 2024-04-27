@@ -132,14 +132,13 @@ a{
 .ytbtn{
     background-color: #ff0000;
     border: 0;
+    width: 160px;
     color: #fff;
     padding: 16px 22px 16px 22px;
-    width: 10%;
-    margin-top: 15px;
+    margin: 15px 0 30px 20px;
     font-size: 1.3em;
     border-radius: 10px;
     cursor: pointer;
-    margin-bottom: 30px;
 }
 
 .ytbtn:hover{
