@@ -244,6 +244,10 @@ header{
         margin-bottom: 0;
         font-size: 2.4em;
     }
+    .info-section{
+        height: 100vh;
+        background-size: 100%;
+    }
 }
 @media (width < 1001px){
     .info-section h1{
@@ -258,11 +262,9 @@ header{
         font-size: 2.2em;
         margin-left: 30px;
     }
-}
-
-.info-section{
-    height: 100vh;
-    background-size: 100%;
+    .info-section{
+        background-size: 100%;
+    }
 }
 
 .info-block{
