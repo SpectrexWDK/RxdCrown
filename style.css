@@ -155,7 +155,7 @@ header{
     .main-section{
         background: url("images/backgrounds/MainBack.jpg");
         height: 100vh;
-        background-position: 50%;
+        background-position: 40%;
         background-size: auto;
     }
 }
@@ -231,12 +231,34 @@ header{
     }
     .info-section h2{
         padding: 1px;
-        font-size: 1.4em;
         width: 80%;
         margin-left: 30px;
     }
 }
 
+@media (width > 1001px){
+    .info-section h1{
+        padding-top: 100px;
+        margin: 30px;
+        color: #ff0000;
+        margin-bottom: 0;
+        font-size: 2.4em;
+    }
+}
+@media (width < 1001px){
+    .info-section h1{
+        padding-top: 100px;
+        margin: 30px;
+        color: #ff0000;
+        margin-bottom: 0;
+        font-size: 3em;
+    }
+    .info-section h2{
+        padding: 1px;
+        font-size: 2.2em;
+        margin-left: 30px;
+    }
+}
 
 .info-section{
     height: 100vh;
@@ -251,13 +273,7 @@ header{
     transform: scale(1.1);
 }
 
-.info-section h1{
-    padding-top: 100px;
-    margin: 30px;
-    color: #ff0000;
-    margin-bottom: 0;
-    font-size: 2.4em;
-}
+
 
 /* =========================[VIDEO SECTION]========================== */
 
