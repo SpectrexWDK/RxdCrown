@@ -142,12 +142,16 @@ header img{
 
 @media(width > 1701px)
 {
-    .screenshot{
+    .screenshot_android{
         width: 210px;
         height: 430px;
         display: inline-flex;
     }
-
+    .screenshot_windows{
+        width: 480px;
+        height: 270px;
+        display: inline-flex;
+    }
     .info-block{
         width: 55%;
         display: flex;
@@ -158,11 +162,17 @@ header img{
 
 @media(width < 1701px)
 {
-    .screenshot{
+    .screenshot_android{
         width: 140px;
         height: 286px;
         display: inline-flex;
         justify-content: left;
+    }
+
+    .screenshot_windows{
+        width: 360px;
+        height: 200px;
+        display: inline-flex;
     }
 
     .info-block{
@@ -187,7 +197,7 @@ header img{
 }
 
 
-.screenshot img{
+.screenshot_android img{
     width: 100%;
     height: 100%;
     margin: 0;
@@ -199,13 +209,33 @@ header img{
     transition: 0.6s;
 }
 
-#platform{
-    width: 35px;
+.screenshot_windows img{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    border-radius: 8px;
+    border: 2px solid red;
+    border-radius: 10px;
+    margin: 10px 40px 0 0;
+    transition: 0.6s;
 }
 
-.screenshot img:hover{
+
+
+#platform{
+    width: 35px;
+    border-radius: 0;
+}
+
+.screenshot_android img:hover{
     transform: scale(1.1);
 }
+
+.screenshot_windows img:hover{
+    transform: scale(1.1);
+}
+
 
 
 
