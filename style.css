@@ -29,6 +29,12 @@ body{
     padding: 0;
 }
 
+.transitionStart img{
+    width: 100%;
+    margin: 0 0 -10px 0;
+    padding: 0;
+}
+
 @media (width < 1539px)
 {
     .transition img{
@@ -37,6 +43,9 @@ body{
     .lasttransition img{
         display: none;
     }
+    .transitionStart{
+        display: none;
+    } 
     #videoimg{
         display: none;
     }
@@ -326,7 +335,6 @@ header{
 /* =========================[PROJECTS SECTION]========================== */
 
 .projects-section{
-    min-height: 100vh;
     background-size: 100%;
     padding-bottom: 20px;
 }
@@ -348,8 +356,12 @@ header{
     font-size: 2.4em;
 }
 
-.projects-category{
+.projectCategory{
     text-align: left;
+}
+
+.projectCategory h3{
+    font-size: 34px;
 }
 
 .projects-container{
@@ -554,4 +566,8 @@ header{
 .portfolio-button:hover{
     background-color: #c40000;
     text-decoration: underline;
+}
+
+.transitionStart{
+    margin-top: -10px;;
 }
