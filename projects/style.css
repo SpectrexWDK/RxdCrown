@@ -196,6 +196,11 @@ header img{
     margin-bottom: 0;
 }
 
+.info-block h3{
+    color: #ff0000;
+    margin-top: 5px;
+}
+
 
 .screenshot_android img{
     width: 100%;
