@@ -146,7 +146,7 @@ header{
 
 @media (width > 1539px){
     .main-section{
-        background: url("images/backgrounds/MainBack.png");
+        background: url("images/backgrounds/MainBack.jpg");
         background-repeat: no-repeat;
         height: 100vh;
         background-size: 100%;
@@ -405,7 +405,7 @@ header{
 }
 
 .project:hover {
-    transform: scale(1.05); /* Увеличиваем масштаб */
+    transform: scale(1.05); 
 }
 
 /* =========================[ACTIVITIES SECTION]========================== */
