@@ -84,6 +84,15 @@ header img{
 .card img{
     width: 300px;
     border-radius: 30px;
+    transition: 0.5s;
+    box-shadow: 0 0 12px 4px #ff0000;
+}
+
+.card img:hover{
+    width: 300px;
+    border-radius: 30px;
+    transform: scale(1.1);
+    box-shadow: 0 0 24px 6px #ff0000;
 }
 
 .info-section{
@@ -167,6 +176,7 @@ a{
     padding: 10px;
     border-radius: 10px;
     margin-bottom: 30px;
+    box-shadow: 0 4px 8px 2px#121212;
 }
 
 @media(max-width: 1359px){

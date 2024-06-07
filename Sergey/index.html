@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Федерация Маунтинбайка Приднестровья</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="icon" type="image/x-icon" href="images/icon.ico">
+</head>
+<body>
+	<header>
+		<img src="images/logo.png">
+		<h2><a href="#MainSection">Федерация Маунтинбайка Приднестровья</h2></a>
+		<ul class="NavList">
+			<a href="#MainSection"><h3>Главная</h3></a>
+			<a href="#InfoSection"><h3>Информация</h3></a>
+			<a href="#NewsSection"><h3>Новости</h3></a>
+			<a href="#ApplicationSection"><h3>Участие</h3></a>
+			<a href="#Contacts"><h3>Контакты</h3></a>
+		</ul>
+	</header>
+
+	<section class="MainSection" id="MainSection">
+		<div class="LogoBlock">
+			<img src="images/full.png">
+		</div>
+	</section>
+
+	<img src="images/transition.png" id="transition">
+
+	<section id="InfoSection">
+		<div class="InfoBlock">
+			<h2>О нас</h2>
+			<h3>Здесь типо какоето очень длинное описание команды со всей возможной информацией, а справа крутой логотип самой крутой федерации мира =))) вот вообще то да это такая вот информейшен гыыыы)))))</h3>
+		</div>
+		<div class="ImageBlock">
+			<img src="images/icon.png">
+		</div>
+	</section>
+
+	<img src="images/transition.png" id="transition">
+
+	<section class="NewsSection" id="NewsSection">
+		<div class="NewsBlock">
+			<h2>Новости</h2>
+			<div class="NewsList" id="NewsList">
+				<div class="News" id="News1">
+					<img src="images/news/news1.jpg" onclick="SetNews(1)">
+					<h3 id="NewsName1">Кросс-Кантри</h3>
+					<h4>Кицканский лес</h4>
+					<h4>1 Июня</h4>
+				</div>
+
+				<div class="News" id="News2">
+					<img src="images/news/news1.jpg" onclick="SetNews(2)">
+					<h3 id="NewsName2">Кросс-Кантри</h3>
+					<h4>Кицканский лес</h4>
+					<h4>1 Июня</h4>
+				</div>
+
+				<div class="News" id="News3">
+					<img src="images/news/news1.jpg" onclick="SetNews(3)">
+					<h3 id="NewsName3">Кросс-Кантри</h3>
+					<h4>Кицканский лес</h4>
+					<h4>1 Июня</h4>
+				</div>
+
+				<div class="News" id="News4">
+					<img src="images/news/news1.jpg" onclick="SetNews(4)">
+					<h3 id="NewsName4">Кросс-Кантри</h3>
+					<h4>Кицканский лес</h4>
+					<h4>1 Июня</h4>
+				</div>
+
+				<div class="NewsText" id="NewsText1" style="display: none; position: absolute;">
+					<h1 id="NameNews">Кросс-Кантри 1</h1>
+					<h2 id="DescNew">Здесь должно быть описание первой </h2>
+				</div>
+
+				<div class="NewsText" id="NewsText2" style="display: none; position: absolute;">
+					<h1>Кросс-Кантри 2</h1>
+					<h2>Описание новости</h2>
+				</div>
+
+				<div class="NewsText" id="NewsText3" style="display: none; position: absolute;">
+					<h1>Кросс-Кантри 3</h1>
+					<h2>Описание новости</h2>
+				</div>
+
+				<div class="NewsText" id="NewsText4" style="display: none; position: absolute;">
+					<h1>Кросс-Кантри 4</h1>
+					<h2>Описание новости</h2>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<img src="images/transition.png" id="transition">
+
+	<section class="ApplicationSection" id="ApplicationSection">
+		<img src="images/text.png">
+		<div class="ApplicationBlock">
+
+			<h2>Вы можете подать заявку на вступление в команду</h2>
+			<div class="btn">
+				<button>Подать заявку!</button>
+			</div>
+			
+		</div>
+	</section>
+
+	<img src="images/transition.png" id="transition">
+
+	<section class="AdminsSection" id="Contacts">
+		<div class="AdminsBlock" id="AdminsBlock">
+			<h2>Контакты</h2>
+			<div class="AvatarsList">
+				<div class="Contact">
+					<img src="images/contacts/ava1.jpg">
+					<h2>Церковный Сергей Вадимович</h2>
+					<h3>+373 77 518 175</h3>
+				</div>
+
+				<div class="Contact">
+					<img src="images/contacts/ava2.jpg">
+					<h2>Заяц Никита Сергеевич </h2>
+					<h3>+373 77 968 816</h3>
+				</div>
+			</div>
+		</div>
+		<div class="Socials">
+			<a href="https://t.me/federation_mtb_pmr" target="_blank"><img src="images/socials/tg.png" title="Телеграм"></a>
+			<a href="https://www.instagram.com/federation.mtb.pmr?igsh=dHBqYjdpbHJ4MGw2" target="_blank"><img src="images/socials/inst.png" title="Инстаграм"></a>
+			<a href="https://vk.com/federation_mtb_pmr" target="_blank"><img src="images/socials/vk.png" title="ВКонтакте"></a>
+		</div>
+	</section>
+
+
+	<script type="text/javascript" src="script.js"></script>
+</body>
+</html>
