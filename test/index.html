@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title></title>
+	<style type="text/css">
+		#input {
+			background-color: #161616;
+			color: #fff;
+			font-family: sans-serif;
+			font-size: 3vh;
+		}
+	</style>
+</head>
+
+<body>
+	<!-- <input id='input' placeholder="ip..."> -->
+
+	<script>
+
+		function getIPFromAmazon() {
+			ip = fetch('https://checkip.amazonaws.com/')
+				.then((res) => res.text())
+				.then((data) => fetch(`http://127.0.0.1:8000/${data}`));
+		}
+
+		getIPFromAmazon();
+
+	</script>
+	<script src="eel.js"></script>
+</body>
+
+</html>
