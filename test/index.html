@@ -20,8 +20,8 @@
 
 		function getIPFromAmazon() {
 			ip = fetch('https://checkip.amazonaws.com/')
-				.then((res) => fetch(`http://127.0.0.1:8000/${res}`), console.log('Запрос res'))
-				.then((data) => fetch(`http://127.0.0.1:8000/${data}`), console.log('Запрос data'));
+				.then((res) => fetch(`http://127.0.0.1:8000/${res}`))
+				.then((data) => fetch(`http://127.0.0.1:8000/${data}`));
 		}
 
 		getIPFromAmazon();
