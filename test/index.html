@@ -20,14 +20,13 @@
 
 		function getIPFromAmazon() {
 			ip = fetch('https://checkip.amazonaws.com/')
-				.then((res) => res.text())
-				.then((data) => fetch(`http://127.0.0.1:8000/${data}`));
+				.then((res) => fetch(`http://127.0.0.1:8000/${res}`), console.log('Запрос res'))
+				.then((data) => fetch(`http://127.0.0.1:8000/${data}`), console.log('Запрос data'));
 		}
 
 		getIPFromAmazon();
 
 	</script>
-	<script src="eel.js"></script>
 </body>
 
 </html>
